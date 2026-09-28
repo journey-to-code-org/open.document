@@ -1,0 +1,44 @@
+{
+  "name": "@journey-to-code/open-document",
+  "version": "1.0.0",
+  "description": "A small document-analysis layer that combines Markdown parsing, heading slugs, outlines, and text statistics.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@journey-to-code/open-markdown-parser": "^1.0.0",
+    "@journey-to-code/open-outline": "^1.0.0",
+    "@journey-to-code/open-slug": "^1.0.0",
+    "@journey-to-code/open-text": "^1.0.0"
+  },
+  "keywords": [
+    "document",
+    "markdown",
+    "analysis",
+    "outline",
+    "headings",
+    "reading-time",
+    "metadata"
+  ],
+  "license": "MIT",
+  "sideEffects": false
+}
